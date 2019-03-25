@@ -40,7 +40,15 @@ public class OneOrginController {
         model.addAttribute("blogTime", blogTime);
         return "blog-left-sidebar";
     }
-
+    /**
+     * 进入欢迎页
+     *
+     * @return
+     */
+    @RequestMapping("/index")
+    public String toIndex2(HttpServletRequest request, Model model) {
+        return "雄安的第一响";
+    }
     /**
      * 详情页面
      * @param request
